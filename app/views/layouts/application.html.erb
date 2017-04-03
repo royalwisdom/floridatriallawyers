@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Playfair+Display|Raleway|Crimson+Text" rel="stylesheet">
+  </head>
+
+  <body>
+	<div id="top-banner-container">
+		<div id="banner">
+			<h1>Florida Trial Lawyers</h1>
+		</div>
+	
+		<div id="navigation">
+			<ul> 
+				<li style="border-left:solid thin; padding:0 5px 0 10px;"><%= link_to 'Home', root_path %></li>
+				<li class="mid-link" style="border-right:solid thin; border-left:solid thin;padding:0 10px 0 10px;"><%= link_to 'The Lawyers', lawyers_path %></li>
+				<li style="border-right:solid thin;padding:0 10px 0 5px;"><%= link_to 'Blog', blog_path %></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="main-content">
+		<%= yield %>
+	</div>
+  </body>
+</html>
