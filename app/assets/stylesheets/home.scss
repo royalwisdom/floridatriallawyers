@@ -2,59 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body, html{
-height: 100%;
-width: 100%;
-margin: 0 0 0 0;
-padding:0 0 0 0;
-min-width:480px;
-overflow-x: hidden;
-overflow-y: hidden;
-}
-#top-banner-container{
-position:relative;
-height: 80px;
-box-shadow:1px 0px 5px 1px;
-}
 
-
-#banner{
-width:100%;
-height:70%;
-border-bottom:solid thin;
-font-family: 'Dosis', sans-serif;
-background-color: #3B9C9C;
-text-align:center;
-margin:0 0 0 0;
+.landing-photos{
+  height:100%;
+  width:100%;
 }
-#banner h1{
-color: #eaff4c;
-margin:0 0 -10px 0;
-padding:0 0 0 0;
-vertical-align: middle;
-font-family: 'Crimson Text', serif;
-}
-
-#navigation{
-margin:0 0 0 0;
-height: 30%;
-text-align:center;
-}
-#navigation ul{
-list-style-type: none;
-margin:0 0 0 -38px;
-height:100%;
-}
-#navigation ul li{
-display: inline-block;
-height:100%;
-vertical-align:middle;
-}
-#navigation ul li a{
-text-decoration:none;
-vertical-align: middle;
-}
-
 #main-content{
 height: 85%;
 width: 100%;
@@ -64,17 +16,25 @@ font-family: 'Raleway', sans-serif;
 letter-spacing:1px;
 overflow-y: scroll;
 }
-
 #main-content h3{
 width: 100%;
 text-align: center;
 margin: 5px 0 10px 0;
 padding: 0 0 0 0;
+color: #294F6D;
 }
-
+#main-content p{
+  line-height:1.75;
+  letter-spacing: 1px;
+  margin: auto;
+  width:65%;
+  max-width:960px;
+  display:block
+}
 #landing-page{
 display:flex;
 flex-direction:column;
+margin:20px 0 0 0;
 }
 .middle-row{
 display:flex;
@@ -104,30 +64,23 @@ padding:0 40px 0 40px;
     stroke-dashoffset: 0;
   }
 }
-#main-content p{
-margin: auto;
-width:65%;
-max-width:960px;
-display:block
-}
 
 #the-lawyers{
 margin-top: 30px;
 border-top: solid thin;
 }
 
-.photos{
-display:inline-block;
+.photos-container{
+height:280px;
+width:100%;
 display:flex;
 justify-content:space-around;
 }
-
 .photo-container{
 text-align:center;
 margin:0 0 0 0;
 height:100%;
 }
-
 .headshot{
 height: 354px;
 width: 236px;
@@ -140,3 +93,26 @@ margin:30px 0 20px 0;
 text-align: center;
 }
 
+#practice-area-content{
+  margin: 60px auto;
+}
+h3{text-align:center;}
+.practice-area{
+  border-bottom:solid thin;
+  margin:auto;
+  width:65%;
+}
+.practice-area p{
+  width:90%;
+  margin:15px auto 20px auto;
+  letter-spacing:.75px;
+  line-height: 1.75;
+}
+
+ul li{
+  display:inline;
+  padding:0 5px 0 5px;
+}
+ul li:hover{
+  cursor: pointer;
+}

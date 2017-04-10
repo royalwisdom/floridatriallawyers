@@ -1,6 +1,6 @@
-<div class="photo-row" style="display:flex;height:280px; width:100%;">
-	<div style="width:50%;outline:solid thin;"></div>
-	<div style="width:50%;outline:solid thin green;"></div>
+<div class="photos-container">
+	<div style="width:50%;"><img class="landing-photos" src="legal2.jpg"></div>
+	<div style="width:50%;"><img class="landing-photos" src="photo1.jpg"></div>
 </div>
 <div id="landing-page">
 <div class="top-row">
@@ -32,11 +32,11 @@
 			</svg>
 	</div>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est lab 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est lab
 	</br>	</br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est lab 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est lab
 	</p>
-	
+
 	<div id="legal-column-container">
 		<svg class="legal-column-svg" xmlns="http://www.w3.org/2000/svg">
 			<path class="legal-column" fill="none" stroke="black" stroke-width="2" stroke-miterlimit="0"
@@ -63,17 +63,21 @@
 <div class="bottom-row"></div>
 </div>
 
-
 <div id="contact">
 <h3>Contact Us</h3>
 
-<h5>Address: 1621 Ridgewood Avenue, Daytona Beach Florida</h5>
-<h5>Phone: (386)123-4567</h5>
-<iframe  
-	width="400"
-  height="250"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCIYkA8_QLQ8tx-VtIfFK8rQnh27gsML3U&q=1621+Ridgewood+Avenue,Daytona+Beach+Florida">
-</iframe>
+<h3>Address: 1621 Ridgewood Avenue, Daytona Beach Florida</h5>
+<h4>Phone: (386)123-4567</h5>
+<div class="row" style="display:flex; width:65%;margin:auto;">
+	<iframe
+		width="400"
+	  height="250"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCIYkA8_QLQ8tx-VtIfFK8rQnh27gsML3U&q=1621+Ridgewood+Avenue,Daytona+Beach+Florida">
+	</iframe>
+	<div>
+		<%= link_to "send us a message", new_notification_path %>
+		<p><span style="font-weight: bold;margin:auto;">Disclaimer:</span> This is not regularly monitored and is not a promise to do business with you.</p>
+	</div>
 </div>
-
+</div>

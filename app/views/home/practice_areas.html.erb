@@ -1,0 +1,38 @@
+
+<script>
+$(window).ready(function(){
+  $('.practice-area-list-element').click(function(){
+    var practice_area = $(this).attr('data-practice-area');
+    var practice_area_div_position = $('div#' + practice_area).offset().top;
+    var div_position = $('#main-content').offset().top
+    var scroll_position = practice_area_div_position - div_position
+    $('#main-content').scrollTop(scroll_position)
+  })
+});
+</script>
+<div id="practice-areas-header" style="border-bottom:solid thin;">
+  <h3>Practice Areas</h3>
+  <div class="row nav">
+    <ul style="display:inline;">
+      <li class="practice-area-list-element" data-practice-area="area-1">Area 1</li>
+      <li class="practice-area-list-element" data-practice-area="area-2">Area 2</li>
+      <li class="practice-area-list-element" data-practice-area="area-3">Area 3</li>
+    </ul>
+  </div>
+</div>
+
+<div id="area-1" class="row practice-area">
+  <h4 data-practice-area="area-1"><%= link_to "Area 1", practice_area_path("area_1") %> </h4></a>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque placerat felis, nec iaculis urna ullamcorper at. Duis tempor sem quis ullamcorper suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque commodo felis elit, ac lacinia est egestas sit amet. Pellentesque efficitur tincidunt ex. Donec maximus rhoncus sapien, vehicula fermentum erat euismod quis. Vestibulum eget porttitor mi, vel auctor libero. Nulla in lorem at nisl lacinia ultricies. Morbi id leo tortor. </p>
+</div>
+
+<div id="area-2" class="row practice-area">
+  <a href="#"><h4>Area 2</h4></a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque placerat felis, nec iaculis urna ullamcorper at. Duis tempor sem quis ullamcorper suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque commodo felis elit, ac lacinia est egestas sit amet. Pellentesque efficitur tincidunt ex. Donec maximus rhoncus sapien, vehicula fermentum erat euismod quis. Vestibulum eget porttitor mi, vel auctor libero. Nulla in lorem at nisl lacinia ultricies. Morbi id leo tortor. </p>
+</div>
+
+<div id="area-3" class="row practice-area">
+  <a href="#"><h4>Area 3</h4></a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque placerat felis, nec iaculis urna ullamcorper at. Duis tempor sem quis ullamcorper suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque commodo felis elit, ac lacinia est egestas sit amet. Pellentesque efficitur tincidunt ex. Donec maximus rhoncus sapien, vehicula fermentum erat euismod quis. Vestibulum eget porttitor mi, vel auctor libero. Nulla in lorem at nisl lacinia ultricies. Morbi id leo tortor. </p>
+</div>
